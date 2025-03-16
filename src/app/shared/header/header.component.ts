@@ -8,8 +8,10 @@ import { GlobalService } from 'src/app/global.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent { 
-  
-  constructor(private router: Router,public global: GlobalService) { }
+  currentYear!: number;
+  constructor(private router: Router,public global: GlobalService) {
+    this.currentYear = new Date().getFullYear();
+   }
    
   navigateTo(val: any) { 
     this.router.navigate([val]);

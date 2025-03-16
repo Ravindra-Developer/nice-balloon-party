@@ -93,13 +93,13 @@
   </nav>
 </header>
 
-<div class="offcanvas offcanvas-start " data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+<div class="offcanvas offcanvas-start modern-sidebar" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
   aria-labelledby="staticBackdropLabel">
   <div class="offcanvas-header">
     <a class="navbar-brand" href="javascript:void(0)">
       <img src="assets/logo/nice-balloon-party.png" width="100" alt="Logo">
     </a>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
     <div class="navbar-collapse">
@@ -107,14 +107,14 @@
         <li class="nav-item">
           <a data-bs-dismiss="offcanvas" aria-label="Close" class="nav-link"
             [ngClass]="global.activeTab == 'home' ? 'active' : ''" (click)="navigateTo('home')">
-            Home
+            <i class="fas fa-home"></i> Home
           </a>
         </li>
 
         <li class="nav-item">
           <a data-bs-dismiss="offcanvas" aria-label="Close" class="nav-link"
             [ngClass]="global.activeTab == 'about-us' ? 'active' : ''" (click)="navigateTo('about-us')">
-            About us
+            <i class="fas fa-info-circle"></i> About us
           </a>
         </li>
 
@@ -122,66 +122,64 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="servicesDropdown" role="button"
             data-bs-toggle="dropdown"
-            [ngClass]="global.activeTab === 'services/birthday' || global.activeTab === 'services/welcome-baby' || global.activeTab === 'services/cartoon-theme'
-             || global.activeTab === 'services/anniversary' || global.activeTab === 'services/kids-birthday' || global.activeTab === 'services/love-theme'
-             || global.activeTab === 'services/baby-shower'|| global.activeTab === 'services/office'|| global.activeTab === 'services/other-events' ? 'active' : ''">
-            Services
+            [ngClass]="global.activeTab.includes('services') ? 'active' : ''">
+            <i class="fas fa-concierge-bell"></i> Services
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
-                (click)="navigateTo('services/birthday')"
-                [ngClass]="global.activeTab === 'services/birthday' ? 'active-dropdown' : ''">Birthday Decorations</a>
-            </li>
-            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
-                (click)="navigateTo('services/welcome-baby')"
-                [ngClass]="global.activeTab === 'services/welcome-baby' ? 'active-dropdown' : ''">Welcome Baby
-                Decorations</a></li>
-            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
-                (click)="navigateTo('services/cartoon-theme')"
-                [ngClass]="global.activeTab === 'services/cartoon-theme' ? 'active-dropdown' : ''">Cartoon Theme
-                Decorations</a></li>
-            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
-                (click)="navigateTo('services/anniversary')"
-                [ngClass]="global.activeTab === 'services/anniversary' ? 'active-dropdown' : ''">Anniversary
-                Decorations</a></li>
-            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
-                (click)="navigateTo('services/kids-birthday')"
-                [ngClass]="global.activeTab === 'services/kids-birthday' ? 'active-dropdown' : ''">Kid's Birthday
-                Decorations</a></li>
-            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
-                (click)="navigateTo('services/love-theme')"
-                [ngClass]="global.activeTab === 'services/love-theme' ? 'active-dropdown' : ''">Love Theme
-                Decorations</a></li>
-            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
-                (click)="navigateTo('services/baby-shower')"
-                [ngClass]="global.activeTab === 'services/baby-shower' ? 'active-dropdown' : ''">Baby Shower
-                Decorations</a></li>
-            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
-                (click)="navigateTo('services/office')"
-                [ngClass]="global.activeTab === 'services/office' ? 'active-dropdown' : ''">Office Decoration</a></li>
-            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
-                (click)="navigateTo('services/other-events')"
-                [ngClass]="global.activeTab === 'services/other-events' ? 'active-dropdown' : ''">Other Events</a></li>
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close"
+                (click)="navigateTo('services/birthday')">
+                🎂 Birthday Decorations</a></li>
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close"
+                (click)="navigateTo('services/welcome-baby')">
+                👶 Welcome Baby</a></li>
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close"
+                (click)="navigateTo('services/cartoon-theme')">
+                🧸 Cartoon Theme</a></li>
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close"
+                (click)="navigateTo('services/anniversary')">
+                ❤️ Anniversary</a></li>
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close"
+                (click)="navigateTo('services/kids-birthday')">
+                🎈 Kid's Birthday</a></li>
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close"
+                (click)="navigateTo('services/love-theme')">
+                💕 Love Theme</a></li>
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close"
+                (click)="navigateTo('services/baby-shower')">
+                🍼 Baby Shower</a></li>
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close"
+                (click)="navigateTo('services/office')">
+                🏢 Office Decoration</a></li>
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close"
+                (click)="navigateTo('services/other-events')">
+                🎭 Other Events</a></li>
           </ul>
-
         </li>
 
         <li class="nav-item">
           <a class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close"
             [ngClass]="global.activeTab == 'gallery' ? 'active' : ''" (click)="navigateTo('gallery')">
-            Gallery
+            <i class="fas fa-images"></i> Gallery
           </a>
         </li>
-
-        <!-- <li class="nav-item">
-          <a class="nav-link" [ngClass]="global.activeTab == 'contact-us' ? 'active' : ''"
-            (click)="navigateTo('contact-us')">
-            Contact us
-          </a>
-        </li> -->
       </ul>
+    </div>
 
-
+    <!-- Sidebar Footer Section -->
+    <div class="sidebar-footer text-center mt-auto">
+      <!-- <p class="contact-info">
+        <i class="fas fa-phone-alt"></i> <a href="tel:+919876543210">+91 98765 43210</a>
+      </p> -->
+      <!-- <p class="contact-info">
+        <i class="fas fa-envelope"></i> <a href="mailto:info@niceballoons.com">info@niceballoons.com</a>
+      </p>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div> -->
+      <p class="copyright">&copy; {{ currentYear }} Nice Balloon Party</p>
     </div>
   </div>
+  
 </div>

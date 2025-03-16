@@ -60,6 +60,7 @@ export class HomeComponent implements OnInit {
     new WOW().init();
     this.wowService.init();
     window.scrollTo(0, 0)
+    document.getElementById('carousel-control-nextcarouselExampleAutoplaying')?.click()
   }
    
   
