@@ -17,7 +17,7 @@ import { TabViewModule } from 'primeng/tabview';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TermsConditionComponent } from './terms-condition/terms-condition.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CommonModule } from '@angular/common';
+import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ToastModule } from 'primeng/toast'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -47,7 +47,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ToastModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
