@@ -1,0 +1,305 @@
+/* You can add global s/* styles.css or styles.scss */
+@import 'animate.css';
+
+@import "primeicons/primeicons.css";
+
+* {
+    -webkit-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+:root {
+    --theme-color: #dee2e6;
+    --color: #ff5f6a;
+    --primary-dark-color: #e50f45; //dark
+    --primary-color: #ff5f6a; //medium
+    --primary-light-color: #f44a53; //light
+    --secondary-dark-color: #ffa027; //dark
+    --secondary-color: #fda62a; //medium
+    --secondary-light-color: #ffbf37; //light
+    --tertiary-dark-color: #18b277; //dark
+    --tertiary-color: #1bc679; //medium
+    --tertiary-light-color: #53d57e; //light
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #3333;
+    border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #212121;
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3333;
+}
+
+p {
+    font-family: 'Figtree', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Sora', sans-serif;
+}
+
+.head {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    color: #333333;
+    letter-spacing: -1px;
+}
+
+.txt {
+    font-family: 'Figtree', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444343;
+}
+
+.block {
+    padding: 60px 0 !important;
+}
+
+.thirteen h1 {
+    position: relative;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    min-width: 150px;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    white-space: nowrap;
+    border: 2px solid #222;
+    padding: 5px 11px 3px 11px;
+}
+
+.thirteen h1:before,
+.thirteen h1:after {
+    background-color: #c50000;
+    position: absolute;
+    content: '';
+    height: 7px; 
+    width: 7px;
+    border-radius: 50%;
+    bottom: 18px;
+}
+
+.thirteen h1:before {
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.thirteen h1:after {
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.heading {
+    font-family: 'Sora', sans-serif;
+    color: #9d9c9b;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.title {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.button {
+    font-family: 'Sora', sans-serif;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 10px 0 10px 0 !important;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 600;
+    font-size: 16px;
+    border: 2px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+}
+
+.button::before,
+.button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+
+.button::before {
+    top: -1em;
+    left: -1em;
+}
+
+.button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.button:hover::before,
+.button:hover::after {
+    height: 410px;
+    width: 410px;
+}
+
+.button:hover {
+    color: #fff;
+}
+
+.button:active {
+    filter: brightness(.8);
+}
+
+.icon {
+    color: #ff5f6a;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    border-color: #ff5f6a;
+    background-color: transparent;
+}
+
+.btn:disabled {
+    color: #ffff !important;
+    background-color: #ff5f6a !important;
+    border-color: #ff5f6a !important;
+}
+
+.btn:active {
+    transform: scale(0.9);
+    transition: all 0.4s ease;
+}
+
+.p-rating .p-rating-item.p-rating-item-active .p-rating-icon {
+    color: #FFD700;
+}
+
+.p-rating .p-rating-item .p-rating-icon {
+    color: #858585;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    font-size: 1.143rem;
+}
+
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    border-radius: 50px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.p-carousel .p-carousel-indicators {
+    display: none !important;
+}
+
+
+/* For screens smaller than or equal to 1200px */
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 2.2rem;
+        /* Slightly smaller font size for medium screens */
+        margin-bottom: 35px;
+        /* Reduced margin for medium screens */
+    }
+}
+
+/* For tablets and smaller devices (screens smaller than or equal to 768px) */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 1.8rem;
+        /* Further reduce the font size for tablets */
+        margin-bottom: 30px;
+        /* Further reduce the margin for tablets */
+    }
+}
+
+/* For mobile devices (screens smaller than or equal to 480px) */
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1rem;
+        /* Smallest font size for mobile screens */
+        margin-bottom: 20px;
+        /* Small margin for mobile screens */
+    }
+}
+
+.offcanvas.offcanvas-start {
+    width: 80% !important;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .thirteen h1 {
+        font-size: 20px; /* Smaller font for mobile */
+        padding: 4px 10px;
+        border-width: 1.5px; /* Thinner border */
+    }
+
+    
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+    .thirteen h1 {
+        font-size: 18px;
+        padding: 3px 8px;
+    }
+
+   
+}

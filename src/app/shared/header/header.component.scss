@@ -1,0 +1,135 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  border-bottom: 2px solid #142E54;
+  background-color: #EAE6DF;
+  // background-color: #DFE9DE;
+  box-shadow: none;
+
+  /* Navbar */
+  .navbar {
+    padding: 12px 0;
+
+    .navbar-brand {
+      img {
+        width: 120px;
+        height: 50px;
+        object-fit: contain;
+      }
+    }
+
+    /* Navbar Links */
+    .nav-item {
+      margin: 0 12px;
+      cursor: pointer;
+
+      .nav-link {
+        font-family: "Sora", sans-serif;
+        color: #142E54;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 8px 0;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #142E54 !important;
+        }
+      }
+
+      .active {
+        border-bottom: 2px solid #142E54;
+      }
+    }
+
+    /* Dropdown Menu */
+    .dropdown-menu {
+      background-color: #fff;
+      border: 1px solid #142E54;
+      padding: 10px;
+      min-width: 220px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+      .dropdown-item {
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 7px 10px;
+        transition: background 0.3s ease;
+
+        &:hover {
+          background-color: #c2ccc5;
+          color: #142E54;
+        }
+      }
+
+      .active-dropdown{
+        background-color: #c2ccc5;
+        color: #142E54;
+      }
+    }
+  }
+
+  /* Call to Action */
+  .call-text {
+    a {
+      color: #142E54;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+    
+    .call-text-icon {
+      margin-right: 15px;
+      background: #142E54;
+      color: #DFE9DE;
+      border: 1px solid #142E54;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      display: inline-block;
+      line-height: 30px;
+      border-radius: 6px;
+    }
+  }
+
+  /* ✅ Mobile Responsiveness */
+  @media (max-width: 767px) {
+    .navbar-nav {
+      text-align: center;
+    }
+
+    .nav-item {
+      margin-bottom: 10px;
+    }
+
+    .dropdown-menu {
+      text-align: center;
+    }
+
+    .call-text {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+}
+
+.navbar-toggler{
+  box-shadow: none;
+  border: none;
+}
+
+.offcanvas-body{ background-color: #EAE6DF;
+padding: 30px;}
+.offcanvas-header{ background-color: #EAE6DF;
+padding: 30px;
+.navbar-brand {
+  img {
+    width: 120px;
+    height: 50px;
+    object-fit: cover;
+  }
+}}
+

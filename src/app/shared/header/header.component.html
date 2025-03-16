@@ -1,0 +1,187 @@
+<header>
+  <nav class="navbar navbar-expand-md">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="javascript:void(0)">
+        <img src="assets/logo/nice-balloon-party.png" alt="Logo">
+      </a>
+
+      <!-- Mobile Navbar Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="global.activeTab == 'home' ? 'active' : ''" (click)="navigateTo('home')">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="global.activeTab == 'about-us' ? 'active' : ''"
+              (click)="navigateTo('about-us')">
+              About us
+            </a>
+          </li>
+
+          <!-- Services Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="servicesDropdown" role="button"
+              data-bs-toggle="dropdown"
+              [ngClass]="global.activeTab === 'services/birthday' || global.activeTab === 'services/welcome-baby' || global.activeTab === 'services/cartoon-theme'
+               || global.activeTab === 'services/anniversary' || global.activeTab === 'services/kids-birthday' || global.activeTab === 'services/love-theme'
+               || global.activeTab === 'services/baby-shower'|| global.activeTab === 'services/office'|| global.activeTab === 'services/other-events' ? 'active' : ''">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="javascript:void(0)" (click)="navigateTo('services/birthday')"
+                  [ngClass]="global.activeTab === 'services/birthday' ? 'active-dropdown' : ''">Birthday Decorations</a>
+              </li>
+              <li><a class="dropdown-item" href="javascript:void(0)" (click)="navigateTo('services/welcome-baby')"
+                  [ngClass]="global.activeTab === 'services/welcome-baby' ? 'active-dropdown' : ''">Welcome Baby
+                  Decorations</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)" (click)="navigateTo('services/cartoon-theme')"
+                  [ngClass]="global.activeTab === 'services/cartoon-theme' ? 'active-dropdown' : ''">Cartoon Theme
+                  Decorations</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)" (click)="navigateTo('services/anniversary')"
+                  [ngClass]="global.activeTab === 'services/anniversary' ? 'active-dropdown' : ''">Anniversary
+                  Decorations</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)" (click)="navigateTo('services/kids-birthday')"
+                  [ngClass]="global.activeTab === 'services/kids-birthday' ? 'active-dropdown' : ''">Kid's Birthday
+                  Decorations</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)" (click)="navigateTo('services/love-theme')"
+                  [ngClass]="global.activeTab === 'services/love-theme' ? 'active-dropdown' : ''">Love Theme
+                  Decorations</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)" (click)="navigateTo('services/baby-shower')"
+                  [ngClass]="global.activeTab === 'services/baby-shower' ? 'active-dropdown' : ''">Baby Shower
+                  Decorations</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)" (click)="navigateTo('services/office')"
+                  [ngClass]="global.activeTab === 'services/office' ? 'active-dropdown' : ''">Office Decoration</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)" (click)="navigateTo('services/other-events')"
+                  [ngClass]="global.activeTab === 'services/other-events' ? 'active-dropdown' : ''">Other Events</a>
+              </li>
+            </ul>
+
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="global.activeTab == 'gallery' ? 'active' : ''"
+              (click)="navigateTo('gallery')">
+              Gallery
+            </a>
+          </li>
+
+          <!-- <li class="nav-item">
+            <a class="nav-link" [ngClass]="global.activeTab == 'contact-us' ? 'active' : ''"
+              (click)="navigateTo('contact-us')">
+              Contact us
+            </a>
+          </li> -->
+        </ul>
+        <!--  -->
+        <!--  -->
+
+        <!-- Call to Action -->
+        <div class="call-text ms-auto">
+          <i class="pi pi-phone call-text-icon"></i>  <a href="tel:9876543210">+91 98765 43210</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="offcanvas offcanvas-start " data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+  aria-labelledby="staticBackdropLabel">
+  <div class="offcanvas-header">
+    <a class="navbar-brand" href="javascript:void(0)">
+      <img src="assets/logo/nice-balloon-party.png" width="100" alt="Logo">
+    </a>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="navbar-collapse">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a data-bs-dismiss="offcanvas" aria-label="Close" class="nav-link"
+            [ngClass]="global.activeTab == 'home' ? 'active' : ''" (click)="navigateTo('home')">
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a data-bs-dismiss="offcanvas" aria-label="Close" class="nav-link"
+            [ngClass]="global.activeTab == 'about-us' ? 'active' : ''" (click)="navigateTo('about-us')">
+            About us
+          </a>
+        </li>
+
+        <!-- Services Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="servicesDropdown" role="button"
+            data-bs-toggle="dropdown"
+            [ngClass]="global.activeTab === 'services/birthday' || global.activeTab === 'services/welcome-baby' || global.activeTab === 'services/cartoon-theme'
+             || global.activeTab === 'services/anniversary' || global.activeTab === 'services/kids-birthday' || global.activeTab === 'services/love-theme'
+             || global.activeTab === 'services/baby-shower'|| global.activeTab === 'services/office'|| global.activeTab === 'services/other-events' ? 'active' : ''">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
+                (click)="navigateTo('services/birthday')"
+                [ngClass]="global.activeTab === 'services/birthday' ? 'active-dropdown' : ''">Birthday Decorations</a>
+            </li>
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
+                (click)="navigateTo('services/welcome-baby')"
+                [ngClass]="global.activeTab === 'services/welcome-baby' ? 'active-dropdown' : ''">Welcome Baby
+                Decorations</a></li>
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
+                (click)="navigateTo('services/cartoon-theme')"
+                [ngClass]="global.activeTab === 'services/cartoon-theme' ? 'active-dropdown' : ''">Cartoon Theme
+                Decorations</a></li>
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
+                (click)="navigateTo('services/anniversary')"
+                [ngClass]="global.activeTab === 'services/anniversary' ? 'active-dropdown' : ''">Anniversary
+                Decorations</a></li>
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
+                (click)="navigateTo('services/kids-birthday')"
+                [ngClass]="global.activeTab === 'services/kids-birthday' ? 'active-dropdown' : ''">Kid's Birthday
+                Decorations</a></li>
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
+                (click)="navigateTo('services/love-theme')"
+                [ngClass]="global.activeTab === 'services/love-theme' ? 'active-dropdown' : ''">Love Theme
+                Decorations</a></li>
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
+                (click)="navigateTo('services/baby-shower')"
+                [ngClass]="global.activeTab === 'services/baby-shower' ? 'active-dropdown' : ''">Baby Shower
+                Decorations</a></li>
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
+                (click)="navigateTo('services/office')"
+                [ngClass]="global.activeTab === 'services/office' ? 'active-dropdown' : ''">Office Decoration</a></li>
+            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" aria-label="Close" href="javascript:void(0)"
+                (click)="navigateTo('services/other-events')"
+                [ngClass]="global.activeTab === 'services/other-events' ? 'active-dropdown' : ''">Other Events</a></li>
+          </ul>
+
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close"
+            [ngClass]="global.activeTab == 'gallery' ? 'active' : ''" (click)="navigateTo('gallery')">
+            Gallery
+          </a>
+        </li>
+
+        <!-- <li class="nav-item">
+          <a class="nav-link" [ngClass]="global.activeTab == 'contact-us' ? 'active' : ''"
+            (click)="navigateTo('contact-us')">
+            Contact us
+          </a>
+        </li> -->
+      </ul>
+
+
+    </div>
+  </div>
+</div>

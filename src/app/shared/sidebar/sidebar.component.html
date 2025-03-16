@@ -1,0 +1,28 @@
+<header>
+    <nav class="navbar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Logo on the Left -->
+        <a class="navbar-brand" href="javascript:void(0)">
+          <img src="assets/logo/nice-balloon-party.png" alt="Logo">
+        </a>
+        
+        <!-- Menu Icon on the Right -->
+        <button class="menu-toggle" (click)="toggleSidebar()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  
+    <!-- Sidebar Menu -->
+    <div class="sidebar" [ngClass]="{'open': isSidebarOpen}">
+      <button class="close-btn" (click)="toggleSidebar()">&times;</button>
+      <ul>
+        <li><a href="javascript:void(0)" (click)="navigateTo('home')">Home</a></li>
+        <li><a href="javascript:void(0)" (click)="navigateTo('about-us')">About Us</a></li>
+        <li><a href="javascript:void(0)" (click)="navigateTo('gallery')">Gallery</a></li>
+        <li><a href="javascript:void(0)" (click)="navigateTo('services')">Services</a></li>
+        <li><a href="javascript:void(0)" (click)="navigateTo('contact-us')">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+  

@@ -1,0 +1,26 @@
+.gallery {
+    border-bottom: 1px solid #212121;
+
+    .heading {
+        margin-bottom: 40px;
+    }
+
+    .img__box {
+        margin-bottom: 20px;
+
+        img {
+            height: 250px;
+            width: 100%;
+            border-radius: 15px;
+            width: 100%;
+            object-fit: cover; 
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            transition: object-fit 1s;
+            
+            &:hover{
+                transition: object-fit 1s;
+                object-fit: contain;
+            }
+        }
+    }
+}

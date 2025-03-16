@@ -1,0 +1,544 @@
+<section class="block services__list">
+    <div class="container-xl">
+        <div class="row justify-content-center ">
+            <div class="col-12 text-center thirteen">
+                <h1 class="heading text-dark  wow animate__fadeInUp" data-wow-duration="2s">{{returnHeading(type)}}
+                     </h1>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 my-auto text-center">
+                <img loading="lazy" [src]="returnImages(type)" alt="our service kids birthday celebration vector image"
+                    class="img-fluid mb-3  wow animate__fadeInUp" data-wow-duration="2s" width="400">
+            </div>
+            <div class="col-12 col-md-10 col-lg-6 wow animate__fadeInUp" data-wow-duration="2s"
+                *ngIf="type == 'birthday'">
+                <h6> Make Every Birthday Extra Special</h6>
+                <p class="text-muted">Birthdays are milestones that deserve a grand celebration! Whether it’s a
+                    fun-filled kids' birthday or a stylish adult birthday party, we create breathtaking decorations that
+                    match your theme and vision. From balloon backdrops to themed setups, our designs bring excitement
+                    and joy to every birthday celebration. Our decorations include:
+                </p>
+                <ul>
+                    <li>
+                        ✅ Stunning balloon arches and backdrops
+                    </li>
+                    <li>
+                        ✅ Personalized banners and name cutouts
+                    </li>
+                    <li>
+                        ✅ Theme-based decorations (cartoon, floral, glow party, and more)
+                    </li>
+                    <li>
+                        ✅ Photo booths and creative party props
+                    </li>
+                </ul>
+                <p class="txt my-3">Let us bring your dream birthday setup to life and make it an unforgettable
+                    celebration!</p>
+            </div>
+            <div class="col-12 col-md-10 col-lg-6 wow animate__fadeInUp" data-wow-duration="2s"
+                *ngIf="type == 'welcome-baby'">
+                <h6> Celebrate the Joy of New Beginnings</h6>
+                <p class="text-muted">A new arrival brings endless happiness, and we ensure your welcome baby
+                    celebrations are just as special. Our delicate and heartwarming decorations, including pastel
+                    balloons, name banners, and themed props, create a cozy and picture-perfect ambiance to welcome your
+                    little one. We provide:</p>
+                <ul>
+                    <li>
+                        ✅ Soft pastel and gender-themed decorations
+                    </li>
+                    <li>
+                        ✅ Baby name banners and personalized props
+                    </li>
+                    <li>
+                        ✅ Balloon bouquets and floral arrangements
+                    </li>
+                    <li>
+                        ✅ Cute teddy, cradle, and baby-themed décor
+                    </li>
+                </ul>
+                <p class="txt my-3">Give your little one the grand welcome they deserve!</p>
+            </div>
+            <div class="col-12 col-md-10 col-lg-6 wow animate__fadeInUp" data-wow-duration="2s"
+                *ngIf="type == 'cartoon-theme'">
+                <h6> Bring Your Favorite Characters to Life</h6>
+                <p class="text-muted">Kids love their favorite cartoon characters, and we specialize in cartoon-themed
+                    decorations that turn birthday parties into a dreamland! Whether it's superheroes, princesses, or
+                    animated favorites, we craft eye-catching backdrops, table setups, and balloon arrangements that
+                    bring magic and excitement to your child’s celebration. we create exciting and playful setups that
+                    include:</p>
+                <ul>
+                    <li>
+                        ✅ Giant character cutouts and themed backdrops
+                    </li>
+                    <li>
+                        ✅ Balloon sculptures and table centerpieces
+                    </li>
+                    <li>
+                        ✅ Fun props and activity corners
+                    </li>
+                    <li>
+                        ✅ Customized cakes and return gift decoration ideas
+                    </li>
+                </ul>
+                <p class="txt my-3">Make your child’s dreams come true with their favorite characters surrounding them!
+                </p>
+            </div>
+            <div class="col-12 col-md-10 col-lg-6 wow animate__fadeInUp" data-wow-duration="2s"
+                *ngIf="type == 'anniversary'">
+                <h6> Create a Romantic & Elegant Atmosphere</h6>
+                <p class="text-muted">Celebrate love and togetherness with our anniversary decorations, designed to set
+                    the perfect romantic mood. Whether it’s an intimate dinner setup, a silver jubilee celebration, or a
+                    grand anniversary party, we create elegant floral arrangements, candlelit settings, and customized
+                    backdrops that express love and commitment. we provide:</p>
+                <ul>
+                    <li>
+                        ✅ Elegant floral arrangements and candlelight décor
+                    </li>
+                    <li>
+                        ✅ Romantic photo booths and heart-shaped balloons
+                    </li>
+                    <li>
+                        ✅ Custom backdrops with couple names and love quotes
+                    </li>
+                    <li>
+                        ✅ Cozy dinner table and luxury seating setups
+                    </li>
+                </ul>
+                <p class="txt my-3">Let us create a dreamy and romantic setting for your special day!</p>
+            </div>
+            <div class="col-12 col-md-10 col-lg-6 wow animate__fadeInUp" data-wow-duration="2s"
+                *ngIf="type == 'kids-birthday'">
+                <h6>  A Fun-Filled Wonderland for Kids</h6>
+                <p class="text-muted">Make your little one’s birthday a magical and unforgettable experience with
+                    playful and creative decorations! From colorful balloons to themed party setups, we ensure that kids
+                    and guests enjoy a lively, vibrant, and exciting atmosphere that brings their imagination to life.
+                    We provide:
+                </p>
+                <ul>
+                    <li>
+                        ✅ Playful themes like Jungle Safari, Unicorn, Superheroes, etc.
+                    </li>
+                    <li>
+                        ✅ Colorful balloon arrangements and exciting backdrops
+                    </li>
+                    <li>
+                        ✅ Interactive activity corners and fun zones
+                    </li>
+                    <li>
+                        ✅ Themed cake tables and stage decorations
+                    </li>
+                </ul>
+                <p class="txt my-3">Give your child a celebration they will cherish forever!</p>
+            </div>
+            <div class="col-12 col-md-10 col-lg-6 wow animate__fadeInUp" data-wow-duration="2s"
+                *ngIf="type == 'love-theme'">
+                <h6> Add a Touch of Romance to Your Moments</h6>
+                <p class="text-muted">Whether it's a proposal, a romantic date night, or a Valentine's surprise, our
+                    love-themed decorations bring a dreamy and charming ambiance. With heart-shaped balloons, fairy
+                    lights, and personalized elements, we help create an unforgettable experience filled with love and
+                    warmth. Our services include:</p>
+                <ul>
+                    <li>
+                        ✅ Dreamy red and white heart-shaped balloon setups
+                    </li>
+                    <li>
+                        ✅ Candlelight dinner table decorations
+                    </li>
+                    <li>
+                        ✅ Rose petals, fairy lights, and romantic ambiance
+                    </li>
+                    <li>
+                        ✅ Personalized messages and name initials in décor
+                    </li>
+                </ul>
+                <p class="txt my-3">Turn your special moments into everlasting memories with a touch of romance!</p>
+            </div>
+            <div class="col-12 col-md-10 col-lg-6 wow animate__fadeInUp" data-wow-duration="2s"
+                *ngIf="type == 'baby-shower'">
+                <h6> Celebrate Motherhood in Style</h6>
+                <p class="text-muted">A baby shower is a once-in-a-lifetime event, and we make it truly special with our
+                    elegant and joyful decorations. From gender-reveal themes to delicate floral setups, we curate
+                    picture-perfect designs that add beauty and warmth to your celebration, making it a day to remember.
+                    Our setups include:
+                </p>
+                <ul>
+                    <li>
+                        ✅ Beautiful pastel-themed decorations
+                    </li>
+                    <li>
+                        ✅ Gender-reveal balloon surprises and backdrops
+                    </li>
+                    <li>
+                        ✅ Mom-to-be throne and themed seating arrangements
+                    </li>
+                    <li>
+                        ✅ Cute photo booths and fun games setup
+                    </li>
+                </ul>
+                <p class="txt my-3">Make your baby shower as special as the journey to parenthood!</p>
+            </div>
+            <div class="col-12 col-md-10 col-lg-6 wow animate__fadeInUp" data-wow-duration="2s"
+                *ngIf="type == 'office'">
+                <h6> Enhance Your Workplace Celebrations</h6>
+                <p class="text-muted">Transform your office into a vibrant celebration space for festive occasions,
+                    corporate events, or team gatherings. We provide elegant and professional office decoration
+                    services, ensuring a well-balanced mix of style, creativity, and corporate aesthetics that enhance
+                    the event’s spirit. Our office decoration services include:</p>
+                <ul>
+                    <li>
+                        ✅ Elegant corporate event decorations
+                    </li>
+                    <li>
+                        ✅ Festive office makeover for Diwali, Christmas, etc.
+                    </li>
+                    <li>
+                        ✅ Team celebration and appreciation event setups
+                    </li>
+                    <li>
+                        ✅ Conference and seminar stage décor
+                    </li>
+                </ul>
+                <p class="txt my-3">Create a lively and engaging atmosphere for your workplace events!</p>
+            </div>
+            <div class="col-12 col-md-10 col-lg-6 wow animate__fadeInUp" data-wow-duration="2s"
+                *ngIf="type == 'other-events'">
+                <h6> Custom Decorations for Every Occasion</h6>
+                <p class="text-muted">Looking for unique decorations for a special event? Whether it’s a festival,
+                    farewell party, engagement ceremony, or any other occasion, we bring customized decoration ideas to
+                    make your event truly stand out. Share your vision with us, and we’ll create the perfect ambiance
+                    for your special day!</p>
+                <ul>
+                    <li>
+                        ✅ Theme-based decorations for any event
+                    </li>
+                    <li>
+                        ✅ Personalized props and creative setups
+                    </li>
+                    <li>
+                        ✅ Stunning floral arrangements and backdrop designs
+                    </li>
+                    <li>
+                        ✅ Stage décor, lighting, and venue styling
+                    </li>
+                </ul>
+                <p class="txt my-3">Whatever your event, we bring your vision to life with creativity and expertise!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block services">
+    <div class="container-fluid">
+        <div class="row justify-content-center mx-0 mx-sm-5">
+            <div class="col-12 text-center thirteen">
+                <h1 class="heading text-dark  wow animate__fadeInUp" data-wow-duration="2s">Other Services</h1>
+            </div>
+
+            <div class="col-12 col-sm-6  wow animate__fadeInUp" data-wow-duration="2s" *ngIf="type !== 'birthday'">
+                <div class="text-center">
+                    <img loading="lazy" src="assets/images/nice-balloons-images/niceballon_image__009.jpg"
+                        alt="we do everything vector icon image" class="img-fluid my-3 w-100 service_banner_img">
+                    <h5 class="head">Birthday Decorations</h5>
+                    <p class="txt">Make every birthday extra special with vibrant themes, stunning balloon arrangements,
+                        and personalized décor to create lasting memories.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  wow animate__fadeInUp" data-wow-duration="2s" *ngIf="type !== 'welcome-baby'">
+                <div class="text-center">
+                    <img loading="lazy" src="assets/images/nice-balloons-images/niceballon_image__003.jpg"
+                        alt="we do everything vector icon image" class="img-fluid my-3 w-100 service_banner_img">
+                    <h5 class="head">Welcome Baby Decorations</h5>
+                    <p class="txt">Celebrate the joy of a new arrival with adorable, heartwarming decorations that
+                        welcome your little one in style.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  wow animate__fadeInUp" data-wow-duration="2s" *ngIf="type !== 'cartoon-theme'">
+                <div class="text-center">
+                    <img loading="lazy" src="assets/images/nice-balloons-images/niceballon_image__008.jpg"
+                        alt="we do everything vector icon image" class="img-fluid my-3 w-100 service_banner_img">
+                    <h5 class="head">Cartoon Theme Decorations</h5>
+                    <p class="txt">Bring your child's favorite characters to life with playful, colorful, and exciting
+                        cartoon-themed decorations.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  wow animate__fadeInUp" data-wow-duration="2s" *ngIf="type !== 'anniversary'">
+                <div class="text-center">
+                    <img loading="lazy" src="assets/images/nice-balloons-images/niceballon_image__002.jpg"
+                        alt="we do everything vector icon image" class="img-fluid my-3 w-100 service_banner_img">
+                    <h5 class="head">Anniversary Celebrations</h5>
+                    <p class="txt">Set the perfect romantic ambiance with elegant décor, stunning floral arrangements,
+                        and dreamy lighting for your special day.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  wow animate__fadeInUp" data-wow-duration="2s" *ngIf="type !== 'kids-birthday'">
+                <div class="text-center">
+                    <img loading="lazy" src="assets/images/nice-balloons-images/niceballon_image__009.jpg"
+                        alt="we do everything vector icon image" class="img-fluid my-3 w-100 service_banner_img">
+                    <h5 class="head">Kid's Birthday Decorations</h5>
+                    <p class="txt">Transform your kid’s birthday into a magical wonderland with fun-filled themes,
+                        bright colors, and creative setups.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  wow animate__fadeInUp" data-wow-duration="2s" *ngIf="type !== 'love-theme'">
+                <div class="text-center">
+                    <img loading="lazy" src="assets/images/nice-balloons-images/niceballon_image__0014.jpg"
+                        alt="we do everything vector icon image" class="img-fluid my-3 w-100 service_banner_img">
+                    <h5 class="head">Love Theme Decorations</h5>
+                    <p class="txt">Whether it's a proposal, date night, or special celebration, add a touch of romance
+                        with charming love-themed decorations.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  wow animate__fadeInUp" data-wow-duration="2s" *ngIf="type !== 'baby-shower'">
+                <div class="text-center">
+                    <img loading="lazy" src="assets/images/nice-balloons-images/niceballon_image__006.jpg"
+                        alt="we do everything vector icon image" class="img-fluid my-3 w-100 service_banner_img">
+                    <h5 class="head">Baby Shower Decorations</h5>
+                    <p class="txt">Create a warm and beautiful setting to celebrate the arrival of your little one with
+                        elegant and joyful décor.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  wow animate__fadeInUp" data-wow-duration="2s" *ngIf="type !== 'office'">
+                <div class="text-center">
+                    <img loading="lazy" src="assets/images/nice-balloons-images/niceballon_image__0010.jpg"
+                        alt="we do everything vector icon image" class="img-fluid my-3 w-100 service_banner_img">
+                    <h5 class="head">Office Decoration</h5>
+                    <p class="txt">Elevate workplace celebrations with stylish and professional décor for corporate
+                        events, festive occasions, and team gatherings.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  wow animate__fadeInUp" data-wow-duration="2s" *ngIf="type !== 'other-events'">
+                <div class="text-center">
+                    <img loading="lazy" src="assets/images/nice-balloons-images/niceballon_image__0011.jpg"
+                        alt="we do everything vector icon image" class="img-fluid my-3 w-100 service_banner_img">
+                    <h5 class="head">Other Events</h5>
+                    <p class="txt"> From festive celebrations to personalized party setups, we bring creative and
+                        customized decoration ideas to life for every occasion.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block offer-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Left column: Heading and Description -->
+            <div class="col-md-12 my-auto text-center text-md-start thirteen">
+                <h2 class="heading text-center text-dark mb-4  wow animate__fadeInUp" data-wow-duration="2s">
+                    Transforming Every Occasion into a Spectacular Celebration
+                </h2>
+                <p class="lead mb-5 text-center  wow animate__fadeInUp" data-wow-duration="2s">
+                    At Nice Balloons Party, we believe that every event deserves a special touch of creativity and
+                    elegance. Our commitment to exceptional decorations ensures that your celebration is not just an
+                    event, but an unforgettable experience filled with joy, beauty, and charm.
+                    Whether it’s a grand gathering or an intimate affair, we bring your vision to life with customized
+                    decorations that reflect your unique style.
+                </p>
+            </div>
+
+            <!-- Right column: Services -->
+            <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <div class="service-item mb-4 col-6  wow animate__fadeInUp" data-wow-duration="2s">
+                        <!-- <img src="assets/icons/task.png" alt="Personalized Themes" class="service-icon"> -->
+                        <div class="text-start">
+                            <h6 class="title">🎈 Personalized Themes</h6>
+                            <p class="txt">From birthdays to corporate events, we tailor decorations to match your
+                                vision and preferences.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item mb-4 col-6  wow animate__fadeInUp" data-wow-duration="2s">
+                        <!-- <img src="assets/icons/task.png" alt="Premium Quality Decor" class="service-icon"> -->
+                        <div class="text-start">
+                            <h6 class="title">✨ Premium Quality Decor</h6>
+                            <p class="txt">We use high-quality materials, vibrant balloons, elegant floral arrangements,
+                                and stylish props for a picture-perfect setup.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item mb-4 col-6  wow animate__fadeInUp" data-wow-duration="2s">
+                        <!-- <img src="assets/icons/task.png" alt="Attention to Detail" class="service-icon"> -->
+                        <div class="text-start">
+                            <h6 class="title">✅ Attention to Detail</h6>
+                            <p class="txt">Every element, from backdrop designs to table settings, is carefully crafted
+                                to create a stunning ambiance.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item mb-4 col-6  wow animate__fadeInUp" data-wow-duration="2s">
+                        <!-- <img src="assets/icons/task.png" alt="Expert Team" class="service-icon"> -->
+                        <div class="text-start">
+                            <h6 class="title">💼 Expert Team</h6>
+                            <p class="txt">Our professional decorators ensure seamless execution and flawless
+                                presentation for every occasion.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item mb-4 col-6  wow animate__fadeInUp" data-wow-duration="2s">
+                        <!-- <img src="assets/icons/task.png" alt="Hassle-Free Service" class="service-icon"> -->
+                        <div class="text-start">
+                            <h6 class="title">🎉 Hassle-Free Service</h6>
+                            <p class="txt">We take care of everything from planning and setup to final execution, so you
+                                can enjoy a stress-free celebration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block footer-services-data bg-secondary">
+    <div class="container-fluid">
+        <div class="row justify-content-center mx-0 mx-sm-5">
+            <div class="col text-center wow animate__fadeInLeft" data-wow-duration="1s">
+                <svg xmlns="http://www.w3.org/2000/svg" width="54.2%" viewBox="0 0 123.014 150">
+                    <path fill="none" d="M0 0h123.014v150H0z"></path>
+
+                    <g fill="currentColor">
+                        <path
+                            d="M103.883 58.154c.9-5.853-3.044 19.725 7.7-49.86a.274.274 0 0 0 .022-.13c0-10.835-86.48-10.98-86.48.13l7.655 49.538c-8.136 1.488-20.848 4.722-20.848 10.393 0 8.268 28.246 13.21 55.553 13.21s55.53-4.942 55.53-13.21c0-5.134-10.219-8.291-19.131-10.071m-40.3 11.313v-9.422c4.223.149 7.075.148 10.1.1v9.3c-3.69.1-6.437.1-10.1.017m-10.058-.536a95.091 95.091 0 0 1-10.104-1.36V58.4c2.9.371 6.3.744 10.105 1.054Zm30.06-.037V59.73c3.341-.236 6.727-.584 10.121-1.054v8.816c-4.8.715-5.655 1-10.121 1.4m4-65.209a.813.813 0 0 1 .671.93.786.786 0 0 1-.93.671A127.486 127.486 0 0 0 68.349 4.01c-17.915 0-27.694 2.748-27.694 4.154a.811.811 0 1 1-1.623 0c0-5.869 32.541-7.028 48.551-4.479m21.961 7.208-6.882 44.581c-30.72 6.573-64.014.716-68.644-.163l-6.864-44.418c11.963 7.269 70.376 7.3 82.391 0m-42.06 68.919c-32.26 0-53.93-5.992-53.93-11.587 0-2.544 5.152-6.162 19.47-8.786.2 1.258.584 3.773.78 5.031-.008 1.065 1.3 2.051 2.239 2.542 6.728 3.7 26.606 4.241 34.219 4.241 5.761 0 26.507-1.126 31.1-4.606a2.858 2.858 0 0 0 1.523-2.068l.744-4.816c13.055 2.622 17.757 6.072 17.757 8.463 0 5.481-22.139 11.587-53.907 11.587">
+                        </path>
+                        <path
+                            d="M21.645 86.771c-.21-5.1-7.966-5.362-9.831.3-4.02-3.654-10.5 1.13-7.955 7.718-3.361.088-5.315 5.306-2.529 9.033a6.657 6.657 0 0 0 4.092 2.455 5.435 5.435 0 0 0 1.052 5.553 5.69 5.69 0 0 0 5.865 1.451 79.19 79.19 0 0 0 4.2 13.165c-3.8.262-4.5.757-4.592 1.381a23.511 23.511 0 0 0-2.547 9.505c-.264 13.342 15.649 18.13 25.855 4.522 2.421-3.089 4.506-7.516 6.092-10.871 5.235-11.285 7.692-12.851 13.665-16.325a34.254 34.254 0 0 0 29.867-.7 11.017 11.017 0 0 0 4.7-3.981 17.952 17.952 0 0 0 1.882-.13c8.265-1.06 14.345-8.179 15.773-16.4a18.053 18.053 0 0 1-22.718-.8c-2.871-2.6-5.676-7.457-10.342-7.594a4.974 4.974 0 0 0-4.371 2.25 4.973 4.973 0 0 0-4.371-2.25c-4.619.136-7.508 4.99-10.342 7.594a18.054 18.054 0 0 1-22.718.8c1.385 8.157 7.379 15.21 15.535 16.357a.309.309 0 0 0-.021.2.752.752 0 0 0 .275.572c-5.632 2.976-12.22 9.477-15.856 17.658a7.749 7.749 0 0 1-1.395 2.4 1.714 1.714 0 0 1-1.853.5c-.823-.411-.882-1.822-.624-2.72a1.019 1.019 0 0 0 .077-.384s-.016-.121-.017-.127c-.076-.755-.908-1.206-4.351-1.455l-2.432-15.865a3.8 3.8 0 0 0 4.8-4.735 4.21 4.21 0 0 0-.7-1.4 5.01 5.01 0 0 0 1.686-1.285 4.638 4.638 0 0 0-1.642-7.376c6.685-4.24 2.474-12.9-4.213-9.02m53.433 18.454a24.269 24.269 0 0 0 12.527 4.717 11.236 11.236 0 0 1-3.462 2.575 32.6 32.6 0 0 1-27.306 1.174 48.808 48.808 0 0 1 12.319-4.408c.338.219.692.406 1.01.659a.786.786 0 0 0 1.276-.411 7.33 7.33 0 0 1 3.635-4.306m-11.164 3.757-.5-1.932a52.287 52.287 0 0 1 6.2-1.083.779.779 0 0 1 .142 1.551 38.754 38.754 0 0 0-5.842 1.464m-4.239-.975.788 2.251a55.488 55.488 0 0 0-6.775 3.284c-5.71 3.256-7.618 5.566-10.138 9.625a20.27 20.27 0 0 1-3.06-4.4c6.272-6.757 10.961-8.237 19.184-10.761M32.04 131.774q1.917 3.135 3.822 6.283c-2.634 4.36-6.28 8.349-11.145 9.792-7.215 2.134-13.859-2.194-13.694-10.478a21.4 21.4 0 0 1 2.119-8.214c2.347.677 10.344.733 13.527.138 0 .152.008.317.019.527.143 2.767 2.988 4.2 5.351 1.953m-9.182-36.336A.812.812 0 0 0 23.288 97a3.137 3.137 0 0 1 2.442.6c2.756 1.993.806 5.579-1.7 5.65a.812.812 0 0 0-.3 1.553 2.318 2.318 0 0 1 1.219 1.5c.743 2.592-2.412 3.512-3.721 2.223a.813.813 0 0 0-1.371.7c3.91 25.728 2.554 16.918 2.86 18.807-.252.006-2.078.1-3.83.037.032-.656-3.091-6.15-5.179-16.128a.812.812 0 0 0-1.236-.514 4.025 4.025 0 0 1-4.809-.7 3.809 3.809 0 0 1-.283-4.7.813.813 0 0 0-.691-1.293 4.785 4.785 0 0 1-4.072-1.9c-1.773-2.373-.965-5.544.689-6.3a1.435 1.435 0 0 1 1.6.268.811.811 0 0 0 1.308-.955 7.062 7.062 0 0 1-1.264-4.8 4.245 4.245 0 0 1 3.121-3.573 2.961 2.961 0 0 1 3.453 2.329.8.8 0 0 0 .892.712.812.812 0 0 0 .72-.885c-.412-5.771 6.85-6.679 6.884-2.715a1.82 1.82 0 0 1-.608 1.449.811.811 0 0 0 1.018 1.264 11.742 11.742 0 0 1 2.88-1.881 3.7 3.7 0 0 1 2.937.036c1.462.781 1.667 2.918.936 4.348a7.579 7.579 0 0 1-4.329 3.3">
+                        </path>
+                        <path
+                            d="M18.452 98.561a.809.809 0 0 0-.38 1.082 1.584 1.584 0 0 1-2.645 1.7.812.812 0 1 0-1.245 1.044 3.207 3.207 0 0 0 5.354-3.442.811.811 0 0 0-1.082-.38">
+                        </path>
+                        <path
+                            d="M11.729 92.36a2.366 2.366 0 0 1-3.169.4.812.812 0 0 0-1.006 1.27 3.988 3.988 0 0 0 5.464-.687.811.811 0 1 0-1.289-.984">
+                        </path>
+                        <path
+                            d="m34.645 29.092 1.694-2.128 2.713.189-1.5-2.269 1.018-2.522-2.622.726-2.084-1.748-.12 2.717-2.305 1.442 2.548.953Z">
+                        </path>
+                        <path
+                            d="m74.596 31.001 1.694-2.125 2.714.189-1.5-2.269 1.018-2.52-2.621.726-2.084-1.748-.12 2.717-2.306 1.442 2.547.953Z">
+                        </path>
+                        <path
+                            d="m53.103 52.09 2.59-3.254 4.148.289-2.294-3.468 1.557-3.856-4.007 1.11-3.186-2.672-.183 4.154-3.526 2.2 3.894 1.458Z">
+                        </path>
+                        <path
+                            d="m93.163 52.09 2.59-3.254 4.148.289-2.294-3.468 1.557-3.856-4.007 1.11-3.186-2.672-.183 4.154-3.526 2.2 3.894 1.458Z">
+                        </path>
+                        <path
+                            d="M112.058 63.757a.794.794 0 0 0-1 .568.808.808 0 0 0 .568 1c1.171.321 1.494 2.1.938 3.2a7.12 7.12 0 0 1-3.649 2.812 37.756 37.756 0 0 1-16.219 3.184h-.018a.812.812 0 0 0-.023 1.623 39.138 39.138 0 0 0 16.925-3.324c1.678-.746 3.518-1.749 4.435-3.56 1.032-2.027.237-4.9-1.957-5.5">
+                        </path>
+                        <path
+                            d="M122.418 40.139a.811.811 0 0 0-1.147-.036l-4.653 4.364-3.478-3.906a.811.811 0 1 0-1.213 1.078l3.507 3.939-4.939 4.633a.812.812 0 1 0 1.111 1.183l4.908-4.6 4.681 5.257a.811.811 0 1 0 1.213-1.078l-4.71-5.289 4.684-4.394a.813.813 0 0 0 .036-1.147">
+                        </path>
+                        <path
+                            d="M12.861 41.417a.814.814 0 0 0-1.113.281L8.357 47.37l-2.335-2.2a.812.812 0 1 0-1.111 1.183l2.594 2.442-2.963 4.957a.812.812 0 0 0 1.395.833l2.78-4.65 3.635 3.42a.812.812 0 0 0 1.111-1.184L9.57 48.507l3.574-5.98a.814.814 0 0 0-.281-1.113">
+                        </path>
+                        <path
+                            d="M95.648 113.628a6.693 6.693 0 1 0 6.691 6.694 6.7 6.7 0 0 0-6.691-6.694m0 11.762a5.07 5.07 0 1 1 5.069-5.069 5.076 5.076 0 0 1-5.069 5.069">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="col text-center wow animate__fadeInLeft" data-wow-duration="2s">
+                <svg xmlns="http://www.w3.org/2000/svg" width="66.1%" viewBox="0 0 150 139.977">
+
+
+                    <path fill="none" d="M0 0h150v139.977H0z"></path>
+
+
+                    <g fill="currentColor">
+                        <path
+                            d="M104.274 14.276A9.324 9.324 0 0 1 94.95 23.6a9.324 9.324 0 0 1 9.324 9.316 9.322 9.322 0 0 1 9.325-9.316 9.324 9.324 0 0 1-9.325-9.324">
+                        </path>
+                        <path
+                            d="M80.945 31.373a6.3 6.3 0 0 1 6.3 6.289 6.293 6.293 0 0 1 6.3-6.289 6.3 6.3 0 0 1-6.3-6.3 6.3 6.3 0 0 1-6.3 6.3">
+                        </path>
+                        <path
+                            d="m147.627 48.303-35.766-9.934a.889.889 0 0 0-.524.02c-2.136.778-2.242 3.728-2.188 5.977-4.625.968-28.992 7.81-50.849 46.878-17.558 31.3-17.635 31.754-16.017 32.723 1.308.78 3.442-3.993 3.442-3.993 1.725-3.343 5.44-10.278 13.406-24.551 2.416 4.292 9.706 9.069 14.115 11.479a21.483 21.483 0 0 1 .348 11.323c-11.1-4.817-19.856 2.4-18.239 8.713.957 3.659 5.055 5.361 8.3 4.856 5.229-.789 9.322-6.042 11.016-11.109 7.506 4.109 12.507 12.23 20.211 16.605 5.362 3.055 10.494 3.253 14.223 1.845a13.287 13.287 0 0 0 8.065-9.9l4.962 9.06a.86.86 0 0 0 1.593-.222l2.447-10.727 11.44 2.949a.862.862 0 0 0 .905-1.349l-6.6-8.832 10.88-7.057a.86.86 0 0 0-.37-1.575l-11.561-1.349 2.927-11.734a.863.863 0 0 0-1.306-.93l-9.528 6.212-5.8-9.966a.862.862 0 0 0-1.587.26l-2.463 11.953-10.409-3.725a.862.862 0 0 0-1.058 1.2l4.885 9.679-8.746 6.046a.86.86 0 0 0 .278 1.542l10.338 2.611-2.382 10.225a.861.861 0 0 0 1.262.943l7.959-4.5c-2.31 7.784-10.608 10.916-19.5 5.843-7.65-4.342-12.489-12.54-20.565-16.8a23.243 23.243 0 0 0 .132-11.021c3.948 1.965 11.982 5.484 14.244 1.7a64.694 64.694 0 0 1 32.729-30.135c1.429 1.836 3.585 4.148 5.737 3.355.465-.174-.991 1.545 21.372-29.607a3.215 3.215 0 0 0-1.764-4.984m-84.226 81.79c-2.51.39-5.685-.95-6.376-3.585-1.322-5.16 6.53-10.858 16.023-6.645a.745.745 0 0 1 .076.036c-1.464 4.569-5.139 9.5-9.723 10.194m46.874-7.243a.86.86 0 0 0-.628-1.028l-9.32-2.353 7.805-5.394a.861.861 0 0 0 .28-1.1l-4.253-8.426 9.313 3.333a.862.862 0 0 0 1.132-.639l2.21-10.718 5.125 8.8a.86.86 0 0 0 1.214.289l8.453-5.511-2.633 10.559a.861.861 0 0 0 .737 1.062l10.161 1.185-9.647 6.257a.862.862 0 0 0-.222 1.237l5.683 7.61-9.932-2.559a.86.86 0 0 0-1.053.643l-2.133 9.392-4.451-8.126a.86.86 0 0 0-1.179-.336l-8.787 4.968ZM60.194 93.511c1.168-2.089.737-1.3 1.553-2.718a78.832 78.832 0 0 0 2.095 7.5c-2.3-2.1-3.377-3.694-3.648-4.785m27.8 15.415c-.643 1.062-3.267.946-6.855-.309-.293-.1-.608-.234-.912-.349a79.448 79.448 0 0 1-9.609-31.034 112.667 112.667 0 0 1 8.287-9.929c.254 12.011 3.178 24.232 10.6 38.858-.205.36-.36.529-1.508 2.763M96.89 95.8a79.94 79.94 0 0 1-7.256-38.144c.19-.142.365-.3.556-.439a100.118 100.118 0 0 1 8.878-5.808 88.486 88.486 0 0 0 5.6 36.78 62.908 62.908 0 0 0-7.781 7.611m16.93-14.014a79.811 79.811 0 0 1-4.059-32.713c1.481 8.229 6.649 21.92 11.46 29.022a65.55 65.55 0 0 0-7.4 3.691m34.178-29.507-14.157 19.778-.02-1.972 2.645-1.859-3.085-.968-.951-3.09-1.874 2.634-3.232-.05 1.926 2.6-1.047 3.059 3.065-1.03 1.99 1.494-6.047 8.448c-4.563.444-12.472-20.6-13.876-25.185-.9-2.913-2.465-8.941-2.465-11.954-.092-2.122.226-3.605.861-4.069l27 7.512 1.117 1.514-1.045 3.056 3.061-1.034 2.587 1.938-.027-3.227.68-.475 2.08.561a1.494 1.494 0 0 1 .816 2.317">
+                        </path>
+                        <path
+                            d="m119.898 44.109-2.172 3.054-3.747-.058 2.233 3.01-1.213 3.546 3.553-1.194 3 2.25-.038-3.748 3.066-2.156-3.576-1.122Z">
+                        </path>
+                        <path
+                            d="m29.37 125.896 12.339-18.461a.86.86 0 1 0-1.43-.954L27.94 124.942a.86.86 0 0 0 1.43.954">
+                        </path>
+                        <path
+                            d="M29.457 110.949a.864.864 0 0 0-1.179.3l-9.105 15.456a.861.861 0 0 0 1.484.874l9.1-15.456a.86.86 0 0 0-.3-1.179">
+                        </path>
+                        <path
+                            d="M13.34 70.365c5.842 3.054 12.786 2.865 18.448 5.8-2.438 3.157-4 7.84-2.378 11.467 1.1 2.415 3.992 4.239 6.694 3.33 4.77-1.554 5.785-9.969-1.672-15.218a15.823 15.823 0 0 1 6.89-4.124c3.278 1.758 9.093 4.317 12.843 4.164-5.628 10.67-8.423 15.774-9.837 18.194 0 0-2.111 3.281-1.078 3.786 1.286.43 1.13 1.086 14-23.384 14.544-27.65 10.625-45.233 9-50.145-.039-.246-.067-.494-.108-.739.842-.5 3.291-1.969 2.878-3.953a.883.883 0 0 0-.271-.468L47.932.674a2.62 2.62 0 0 0-4.2 1.013c-10.359 26.6-9.962 25.09-9.863 25.574.288 1.37 1.762 2.158 4.464 2.41A48.135 48.135 0 0 1 32.7 62.289c-1.432 2.932 3.814 6.493 6.619 8.188a17.634 17.634 0 0 0-6.384 4.343c-6.112-3.349-12.94-2.921-18.8-5.984-5.771-2.961-8.346-8.777-4.556-13.826l.384 6.25a.861.861 0 0 0 1.479.542l5.3-5.506 5.694 5.278a.862.862 0 0 0 1.445-.607L24.1 53.2l7.875-.856a.861.861 0 0 0 .43-1.539l-6.378-4.863 6.316-6.242a.86.86 0 0 0-.647-1.472l-8.386.408.014-8.28a.862.862 0 0 0-1.49-.589l-6 6.438-5.4-6.517a.861.861 0 0 0-1.524.549l.007 9.468-8-.52a.861.861 0 0 0-.639 1.493l6.349 5.824-5.578 5.747a.861.861 0 0 0 .681 1.459l7.125-.535c-4.881 5.3-3.3 13.191 4.485 17.192m37.628 3.29q2.682-.718 5.15-1.629c-.441.864-.339.691-.923 1.8-.637.33-2.032.363-4.227-.17M40.773 35.634a49.85 49.85 0 0 0-.656-5.868c6.687 0 16.221-2.122 22.037-4.388a59.742 59.742 0 0 1-21.381 10.256m-.951-19.241-.073 1.987-.938.6Zm-1.389 3.549 1.546.566.6 2.342 1.493-1.9 2.414.151-1.347-2.011.889-2.249-2.328.659-1.749-1.445 5.383-13.741a.9.9 0 0 1 1.45-.359l1.339 1.184-.012.352-2.035 1.3 2.27.834.6 2.341 1.492-1.9 1.065.064 15.813 13.982c-1.123 4.4-29.017 10.319-31.676 6.962Zm2.051 24.043a66.206 66.206 0 0 0 24.923-11.264 67.66 67.66 0 0 1-.095 8.474 59.8 59.8 0 0 1-26.424 10.787 46.785 46.785 0 0 0 1.6-8M34.23 63.064a17.953 17.953 0 0 0 1.176-2.22c12.077-1.319 20.874-4.453 28.463-9.157a78.783 78.783 0 0 1-2.852 9.244 59.439 59.439 0 0 1-23.061 6.592c-.268-.192-.545-.385-.791-.576-2.588-2-3.193-3.352-2.936-3.884m-.943 13.975c6.46 4.291 5.641 11.191 2.275 12.287-1.808.612-3.83-.755-4.583-2.4-1.369-3.072.2-7.242 2.308-9.885M8.722 46.445c-.019-.642-.177-.393-5.479-5.38 6.68.338 6.625.649 7.121.19s.175-.365.267-8.625c4.665 5.473 4.445 5.723 5.136 5.741a1.114 1.114 0 0 0 .654-.274l5.179-5.55c.082 7.173-.221 7.162.255 7.619s.634.145 7.68-.105c-5.475 5.557-5.718 5.321-5.674 6.024s.326.49 5.786 4.784l-6.476.7a.863.863 0 0 0-.769.832l-.191 6.618-4.923-4.563a.863.863 0 0 0-1.206.036l-4.52 4.7c-.536-7.257-.247-7.226-.728-7.639-.5-.445-.653-.11-6.969.264 4.67-4.937 4.877-4.733 4.858-5.376">
+                        </path>
+                        <path
+                            d="m57.723 23.491 1.731-2.206 2.8.175-1.561-2.328 1.032-2.607-2.7.767-2.161-1.786-.1 2.8-2.367 1.5 2.632.964Z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="col text-center wow animate__fadeInLeft" data-wow-duration="2s">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50.9%" viewBox="0 0 115.566 150">
+
+
+                    <path fill="none" d="M0 0h115.566v150H0z"></path>
+
+
+                    <g fill="currentColor">
+                        <path
+                            d="M53.796 128.55a2.314 2.314 0 1 0-3.216.6 2.317 2.317 0 0 0 3.216-.6m-1.414-2.03a.839.839 0 0 1 .228 1.21.869.869 0 1 1-.228-1.21">
+                        </path>
+                        <path
+                            d="M98.608 136.866a2.843 2.843 0 0 1-.951-.327.624.624 0 0 1-.205-.129.958.958 0 0 0-1.258 1.424 6.306 6.306 0 0 0 5.911 1.5c4.642-.862 7.207-5.377 8.148-9.973.236-1.08-1.348-1.807-1.663-.463-.91 3.912-2.717 7.96-6.692 8.641a1.354 1.354 0 0 1-.253.023 4.457 4.457 0 0 0 .56-5.476c-1.115-1.9-2.4-3.071-4.077-5.693a8.418 8.418 0 0 0-.062-1.845c-.428-2.3-3.014-1.881-2.546.606a6.085 6.085 0 0 0 .661 1.735 13.792 13.792 0 0 1-.653 4.262c-.453.925-1.321 7.24-5.56 8.033a3.983 3.983 0 0 1-3.667-.965c3.637-2.685 4.224-6.432 2.9-8.367-1.92-2.8-6.662-1.608-6.662 3.641-.183.259-1.561 5.239-3.682 5.631a3.444 3.444 0 0 1-3.4-1.322 9.664 9.664 0 0 0-.8-3.313c-2.515-5.635-8.97-2.435-6.8 1.873.457.921 1.336 1.864 2.352 1.675a.967.967 0 0 0 .171-1.841 1.535 1.535 0 0 1-1-1.488 1.357 1.357 0 0 1 2.11-1.147c1.692.929 2.792 4.535 1.491 7.4a3.736 3.736 0 0 1-2.564 2.3c-2.539.477-4.217-3-5-5.469 1.515-6.265 3.012-13.577 2.578-19.976 1.724-1.05 2.168-2.639 3.025-4.352a13.742 13.742 0 0 1 16.43-6.529c2.037.75 4.024 2.066 6.162 2.9 5.3 2.067 9.127.387 11.088-5.706a36.525 36.525 0 0 0 .816-19.427.885.885 0 1 0-1.723.4 34.737 34.737 0 0 1-.793 18.486c-1.5 4.674-4.006 6.439-8.761 4.6-2.107-.817-3.946-2.082-6.192-2.905a15.563 15.563 0 0 0-18.626 7.4 12.747 12.747 0 0 1-1.678 3.06c-.382-2.626-1.271-6.406-3.635-7.628a2.612 2.612 0 0 0-2.108-.128c-1.282-3.509-2.62-6.751-2.889-9.266.2-1.358.847-4.771 1.692-6.156 1.068-1.754 2.944-2.8 3.951-4.923 2.34-4.956-2.595-9.137.132-17.864 2.474-.622 3.657 1.108 5.214 3.125 1.038 1.344 2.642 2.689 4.27 2.147a3.129 3.129 0 0 0 1.887-2.76c.121-1.553-.5-3.1-1.221-5.427 9.908 1.26 19.782-2.75 26.745-10.142l.03-.029C118.2 39.335 113.8 9.5 91.766 1.653 76.507-3.789 58.494 4.5 51.6 22.216 42.92 11.764 29.339 7.781 17.533 12.66-2.58 20.966-6.064 49.269 10.6 65.33c.258.165 9.154 9.706 23 8.741-.082 3.474 1.047 9.659 4.482 9.117 1.392-.212 2.194-1.628 2.689-2.925.47-1.292.895-2.745 2.062-3.5 2.878 4.08 4.319 10.915 9.92 12.577 1.5.45 3.252.447 4.055 1.4.691.817.551 1.659.529 5.891-.366 3.725 1.144 6.908 3.18 12.482-3.19 4.535.536 21.216 1.981 26.216.2.673.438 1.27.654 1.908-.255.52-2.076 7.631-4.948 8.168a2.517 2.517 0 0 1-2.809-1.55c-1.054-1.958-1.327-7.962-1.552-9.174a.953.953 0 0 0-1.884.277c.088 1.45.246 2.89.44 4.324-.032.072-.093.127-.106.209a1.433 1.433 0 0 1-.065.27 2.039 2.039 0 0 1-1.525 1.449c-2.613.487-4.605-2.652-5.748-5.043a.963.963 0 0 0-1.825.6 13.558 13.558 0 0 1 .424 3.421 16.748 16.748 0 0 1-1.292 6.192c-.165.383-.735 1.583-1.147 1.661-.2.039-.484-.085-.857-.369a8.823 8.823 0 0 1-2.276-3.253c-.594-1.33-1.249-3.83-.861-5.285a.945.945 0 0 0-1.076-1.193c-.8.15-.8.862-.915 1.67a8.494 8.494 0 0 0 .182 2.548c.691 3.655 2.811 6.417 4.663 7.439 1.253.694 1.889.5 2.8-.578 1.632-1.925 2.633-5.625 2.7-8.434 1.957 2.334 5.121 3.632 7.37 1.561.165.4.564 4.02 3.632 5.051a4.017 4.017 0 0 0 2.06.106c2.824-.525 4.7-4.569 5.652-7.273 1.305 2.932 3.325 5.739 6.475 5.154 2.333-.441 4.021-2.7 4.589-4.994a4.776 4.776 0 0 0 5.423.147 8.763 8.763 0 0 0 2.537-3.443c2.259 5.482 8.311 5.555 11.363 1.348a18.877 18.877 0 0 0 2.7-6.495 5.058 5.058 0 0 0 .432-1.451c.078-.357.143-.682.193-.965 1.354 2.073 3.836 4.047 2.82 6.351a2 2 0 0 1-2.115 1.186M12.851 64.974 51.8 48.87a32.543 32.543 0 0 0 3.941 6.795C48.648 73.4 27.41 77.8 12.851 64.974m31.739-37.3-3.041-.543-2.172 2.2-.423-3.06-2.761-1.387 2.779-1.348.465-3.054 2.141 2.227 3.048-.5-1.456 2.725Zm-15.961-7.9-1.941-.346-1.387 1.4-.27-1.954L23.268 18l1.775-.861.3-1.95 1.367 1.422 1.946-.32-.93 1.74Zm-1.873 16.57-2.538-.453-1.812 1.834-.353-2.554-2.3-1.157 2.32-1.125.388-2.549 1.782 1.86 2.544-.418-1.215 2.274ZM10.681 31.6l-1.941-.35-1.387 1.4-.27-1.95-1.763-.886 1.774-.861.3-1.95 1.367 1.422 1.946-.32-.93 1.74Zm40.393 7.58 48.472 17.265C81.9 73.744 53.973 64.459 51.074 39.177m56.319-13.337-3.31-.591-2.364 2.391-.461-3.331-3.004-1.509 3.026-1.467.506-3.324 2.331 2.424 3.318-.546-1.585 2.965Zm-18.784.136-1.887-.337L85.376 27l-.263-1.9-1.713-.86 1.724-.836.289-1.895 1.328 1.391 1.891-.311-.9 1.69ZM67.594 17.65l-1.942-.35-1.386 1.4L64 16.753l-1.762-.885 1.774-.861.3-1.95 1.367 1.422 1.946-.32-.93 1.74ZM79.625 7.095l.475-3.108 2.178 2.266 3.1-.51L83.9 8.515l1.443 2.792-3.094-.552-2.213 2.235-.431-3.113-2.805-1.41ZM54.332 20.312l54.648 19.482a34.57 34.57 0 0 1-8.092 15.251l-49.965-17.8a35.228 35.228 0 0 1 3.408-16.933M3.1 49.609l46.4-19.163a33.872 33.872 0 0 0 1.638 16.782L11.443 63.643A33.069 33.069 0 0 1 3.1 49.609m50.162 38.033c-4.5-1.337-6-7.368-8.628-11.367a14.091 14.091 0 0 1 2.935.332c4.319.838 5.686-2.052 3.939-4.34-.847-1.11-2.368-1.907-4.251-3a21.6 21.6 0 0 0 2.543-1.995A29.479 29.479 0 0 0 57 57.2a29.27 29.27 0 0 0 3.976 3.826c-2.543 2.714-6.033 8.265-2.957 10.348 1.449.947 3.308.067 4.755-.71-1.93 8.219 2.226 12.3.377 16.226-.815 1.723-3.113 3.22-4.057 5.107a4.269 4.269 0 0 0-.933-2.4c-1.276-1.514-3.4-1.5-4.9-1.949m9.394 22.142c2.06-.393 3.014 4.763 3.272 6.84-1.629-.132-1.845-2.91-2.482-4.669l-.793-2.17m1.683 24.909c-1.375-4.875-3.894-17.223-2.8-22.8a14.678 14.678 0 0 1 .6 1.9l.171.634c.565 2.027 1.516 3.995 3.713 3.995.02 0 .04-.007.06-.008.315 5.531-.662 10.845-1.753 16.28m20.3-2.7c.576-2.015 2.824-2.411 3.2-.419a5.415 5.415 0 0 1-2.6 5.161A6.861 6.861 0 0 1 84.64 132">
+                        </path>
+                        <path d="M21.247 113.25V79.985a.885.885 0 1 0-1.769 0v33.266a.885.885 0 0 0 1.769 0"></path>
+                        <path d="M9.989 105.063V87.288a.885.885 0 0 0-1.769 0v17.775a.885.885 0 1 0 1.769 0"></path>
+                        <path d="M113.796 46.516v21.6a.885.885 0 0 0 1.769 0v-21.6a.885.885 0 1 0-1.769 0"></path>
+                        <path d="M106.189 58.687v19.475a.885.885 0 0 0 1.769 0V58.687a.885.885 0 0 0-1.769 0"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="col text-center wow animate__fadeInLeft" data-wow-duration="4s">
+                <svg xmlns="http://www.w3.org/2000/svg" width="66.1%" viewBox="0 0 150 135.956">
+
+
+                    <path fill="none" d="M0 0h150v135.956H0z"></path>
+
+
+                    <g fill="currentColor">
+                        <path
+                            d="M35.225 19.358c-.841 4.631 2.386 7.37 6.142 5.047a14.517 14.517 0 0 0 2.965-2.56c.133 2.4.878 4.711 3.13 5.56a4.5 4.5 0 0 0 3.392-.355c.1-.044.185-.114.282-.161a.735.735 0 0 0-.073.353 4.461 4.461 0 0 0 .95 2.486c2.594 3.257 7.6 4.012 13.012-.3.786-.582.092-1.94-.839-1.228-1.933 1.453-4.321 2.787-6.726 2.748a4.933 4.933 0 0 1-2.649-.866 3.3 3.3 0 0 0 1.751-.624c2.421-1.8 1.544-4.436 2.106-8.724a7.829 7.829 0 0 0 .979-1.258c1.133-2.03-1.685-3.469-2.538.5a11.265 11.265 0 0 1-2.354 2.157c-.589.109-1.031 1.141-3.333 2.654-.952.624-2.432 1.414-3.5 1.009-1.894-.721-2.086-3.814-1.917-5.837 1.611-.952 6.4-6.188 9.086-12.687 10.752 4 10.432 4.144 10.991 3.937a.769.769 0 0 0-.087-1.451L55.552 5.809c.3-1.173.56-2.655-.124-3.621a1.932 1.932 0 0 0-1.859-.706 5.5 5.5 0 0 0-3.089 2.404C42.454.923 42.709.766 42.17.965a.76.76 0 0 0-.393 1.043c.267.5.244.247 7.817 3.185a43 43 0 0 0-4.976 12.626c-.087.474-.12.906-.172 1.353-1.223 1.574-3.936 4.755-5.887 4.407-1.808-.33-2.006-2.175-1.69-4 .2-1.142.545-2.585.848-3.715.6-2.3.741-2.463.476-2.9a.831.831 0 0 0-1.485.26 49.822 49.822 0 0 0-1.482 6.13m20.054 4.389a13.4 13.4 0 0 0 1.611-1.188c-.252 2.131.29 4.808-1.652 5.774a1.744 1.744 0 0 1-2.33-.786 2.617 2.617 0 0 1-.232-.546.809.809 0 0 0-.4-.5.79.79 0 0 0-.391-.043c.2-.12.406-.207.6-.343a20.492 20.492 0 0 0 2.794-2.368M53.295 3.302c.619-.333.924-.331.936.459a6.107 6.107 0 0 1-.212 1.465l-1.963-.74a4.69 4.69 0 0 1 1.239-1.182M51.15 5.786l2.409.915a35.072 35.072 0 0 1-7.252 11.036A41.706 41.706 0 0 1 51.15 5.786">
+                        </path>
+                        <path
+                            d="M40.131 8.614a2.015 2.015 0 0 0 .8-2.085 1.991 1.991 0 1 0-.8 2.085m-.523-2.077a.75.75 0 0 1-1.226.863.75.75 0 0 1 1.226-.863">
+                        </path>
+                        <path
+                            d="M76.742 37.328a.965.965 0 0 0-.552.311c-.6.807.318 2.027 1.984.769a2.685 2.685 0 0 0 1.062-1.585c.678-3-3.006-5.592-6.992-2.817a7.75 7.75 0 0 0-3.352 6.1c.152 3.722 4.7 6.661 10.993 4.56-.009.012-.019.019-.028.031-3.295 4.6 1.833 9.609 6.633 7.077a5.834 5.834 0 0 0 7.356.937.823.823 0 0 0-.28-1.558c-.512-.056-.4.177-1.714.641a3.507 3.507 0 0 1-2.4.02 5.429 5.429 0 0 1-1.612-.981c1.866-1.647 3.724-5.344 1.577-6.919-2.322-1.678-5.808 2.517-3.791 6.59-2.763 1.465-5.866-.874-5.05-3.618a4.58 4.58 0 0 1 2.758-2.885c1.854-.628 2.575.331 3.143-.455a.67.67 0 0 0-.18-1.023 4.447 4.447 0 0 0-3.486 0 .819.819 0 0 0-.683-.522c-.613-.078-.775.678-4.1 1.476-5.335 1.264-9.7-2.255-6.253-6.742 2.2-2.931 5.481-2.724 5.859-.875a1.083 1.083 0 0 1-.163.923 1.424 1.424 0 0 1-.734.554m10.246 9.181c.173-.423.663-1.3 1.1-1.342a.62.62 0 0 1 .4.046c.637.455.024 1.874-.338 2.568a7.432 7.432 0 0 1-1.208 1.72 4.9 4.9 0 0 1 .049-2.992">
+                        </path>
+                        <path
+                            d="M101.574 60.423a5.837 5.837 0 0 0 7.408-.409.821.821 0 0 0-.559-1.479.653.653 0 0 0-.363.1 4.382 4.382 0 0 1-3.562 1.29 5.529 5.529 0 0 1-1.76-.673c1.574-2.025 2.667-5.982.31-7.091-2.6-1.25-5.234 3.581-2.546 7.164a3.485 3.485 0 0 1-5.508-1.4c-.681-2.166 1.3-5.07 3.972-5.11.585-.017.92-.055 1.124-.484a.671.671 0 0 0-.36-.975 2.411 2.411 0 0 0-1.034-.115 4.942 4.942 0 0 0-1.625.364 5.96 5.96 0 0 0-3.29 3.055c-2.386 5.077 3.461 9.173 7.793 5.765m.787-6.815a.7.7 0 0 1 .376.531 6.675 6.675 0 0 1-1.128 3.968c-1.277-2-.148-4.913.752-4.5">
+                        </path>
+                        <path
+                            d="M121.448 46.47c.476-2.816.785-9.255-1.623-10.6a2.335 2.335 0 0 0-2.928.486c-3.525 3.846-3.271 17.181-2.442 22.609.436 2.844 1.309 6.662 3.5 8.455a3.575 3.575 0 0 0 3.864.344c1.975-1.009 3.389-3.3 4.363-5.294a5.635 5.635 0 0 0 .651-1.563.833.833 0 0 0-1.586-.355 21.028 21.028 0 0 1-1.9 3.54c-3.156 4.664-5.693 2.086-6.93-3.459a49.5 49.5 0 0 0 5.025-14.165m-5.489 11.434a55.909 55.909 0 0 1-.356-8.877c.816-21.818 9.58-10.272.356 8.877">
+                        </path>
+                        <path
+                            d="M18.761 135.011a.841.841 0 0 0 1.485.633l8.214-10.068 16.529 9.974a.843.843 0 0 0 1.132-1.194c-1.244-1.864-6.6-9.884-8.8-13.034 2.924.046 10.231.583 16.833 1.172a.846.846 0 0 0 .493-1.574l-15.616-9 11.751-11.438.927-2.5-6.625 2.842.02-.059c2.118-2.2.746-.026 3.221-6.972a.844.844 0 0 0-.946-1.1c-3.287.652-3.469.487-3.806.873-5.918 6.731-12.307 13.568-16.777 18.337-.814-.024-.845.509-3.969 3.4a1.1 1.1 0 0 0-.024 1.553l4.719 4.886a1.091 1.091 0 0 0 1.547.024c3.262-3.23 3.263-3.057 3.427-3.482l5.279-5.138L50.5 120.48c-14.987-1.275-15.186-.84-15.476-.253a.949.949 0 0 0 .142.987c.4.462 4.148 6.006 7.452 10.937l-13.919-8.4a.844.844 0 0 0-1.084.189l-6.852 8.4.8-6.833a.842.842 0 0 0-1.038-.919l-13.101 3.285 6.206-3.7a.845.845 0 0 0-.473-1.567l-3.3.176 6.885-1.677a.846.846 0 0 0 .355-1.457l-6.55-5.709 8.483 3.493a.834.834 0 0 0 1.1-.459.844.844 0 0 0-.458-1.1L6.456 110.42a.844.844 0 0 0-.872 1.418l9.182 8-14.121 3.447a.843.843 0 0 0-.635.943.792.792 0 0 0 .876.719l8.952-.477-8.2 4.889a.845.845 0 0 0 .633 1.545l17.486-4.384Zm25.877-40.1 1.64-.295-1.3 3.891c-11.152 11.21-13.628 13.7-15.571 15.661l-1.227-1.271c4.418-4.718 10.645-11.387 16.457-17.986">
+                        </path>
+                        <path
+                            d="M137.874 69.406c-33.043 3.131-34.795-.186-35.366 1.657-.967-.274-1.914-.477-2.569-.669-21.779-6.418-36.9-25.47-57.861-37.943-4.693-2.788-10.39-6.063-16.048-5.483a3.366 3.366 0 0 0-1.318.47c-.02-.027-.011-.065-.035-.09a.834.834 0 0 0-1.145-.081c-8.436 6.892-12.812 20.218-11.1 28.891 1.55 7.785 7.575 13.366 12.355 16.677 5.715 3.948 12.14 6.632 17.974 10.13 1.371.82 4.934 4.206 14.114 15.663a.841.841 0 0 0 1.5-.541l-.022-1.688 3.374 1.8a.836.836 0 0 0 1.026-.19c.044-.051.041-.12.071-.178l.887.477-1.57-6.456 2.118 1.219-8.992-13.046c16.562 8.59 20.86 17.242 30.533 23.728 2.42 1.623 3.538 2.487 5.575 3.658a15.5 15.5 0 0 0 15.515.011c38.974-22.316 42.851-31.933 42.625-31.746a4.021 4.021 0 0 0-.081-3.913c-1.412-2.159-5.3-2.952-11.56-2.359m10.146 3.273a2.291 2.291 0 0 1 .029 2.174c-5.943 9.778-31.341 25.007-41.988 31.1-9.69 5.507-21.08-4.208-28.888-12.1a83.451 83.451 0 0 0-22.768-16.367 51.354 51.354 0 0 0-7.917-3.162 79.471 79.471 0 0 0-18.867-4.414.845.845 0 0 0-.175 1.68 77.745 77.745 0 0 1 18.214 4.219c.945 1.329 7.038 9.889 13.69 19.211l-1.467-.781a.842.842 0 0 0-1.235.756l.009.675C50.02 87.477 45.64 82.717 43.625 81.51c-5.859-3.508-12.339-6.237-17.882-10.068-4.524-3.135-10.222-8.387-11.659-15.617-1.461-7.392 1.94-18.8 8.687-25.6a8.659 8.659 0 0 0 .834 2.275c3.07 5.994 7.383 10.17 12.152 14.817 14.584 14.243 29.162 25.2 44.568 33.5 4.572 2.478 9.482 4.7 14.549 4.183a14.733 14.733 0 0 0 10.743-7.006c1.109-1.785 2.267-3.923 1.009-5.636 8.251.391 18.141-.018 31.407-1.277 7.31-.69 9.392.7 9.988 1.594">
+                        </path>
+                        <path
+                            d="M109.705 100.809a.848.848 0 0 0 .4-.1 135.89 135.89 0 0 0 33.24-25.424.843.843 0 1 0-1.213-1.169 134.086 134.086 0 0 1-32.828 25.108.846.846 0 0 0 .4 1.587">
+                        </path>
+                        <path
+                            d="m126.04 84.64 10-8.042a.843.843 0 0 0-1.051-1.319l-10 8.042a.843.843 0 0 0 1.051 1.319">
+                        </path>
+                        <path
+                            d="M94.307 28.511a6.205 6.205 0 0 1 8.654 1.578 6.262 6.262 0 0 1 1.58-8.688 6.207 6.207 0 0 1-8.657-1.582 6.261 6.261 0 0 1-1.576 8.691">
+                        </path>
+                        <path
+                            d="M108.774 0a11.786 11.786 0 0 1-10.787 12.7 11.766 11.766 0 0 1 12.649 10.818 11.786 11.786 0 0 1 10.788-12.688A11.769 11.769 0 0 1 108.774 0">
+                        </path>
+                        <path d="M51.357 111.902c.286-.1 5.751-3.066 5.751-3.066l-3.843-4.789s-2.195 7.951-1.908 7.855">
+                        </path>
+                        <path d="m66.583 105.11-7.6-1.063 5.663 6.443Z"></path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>

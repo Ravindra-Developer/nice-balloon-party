@@ -1,0 +1,249 @@
+.main-page {
+    min-height: 90vh;
+    margin-top: 82px;
+}
+
+// .lost__page{
+//     min-height: 90vh;
+// }
+
+.social {
+    position: fixed;
+    top: 120px;
+    right: 0;
+    z-index: 990;
+    padding: 15px 10px;
+
+    .icons {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        background: #212121;
+        font-size: 22px;
+        margin-bottom: 12px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+        a {
+            color: #fff;
+        }
+    }
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 25px;
+    right: 0;
+    z-index: 990;
+    padding: 15px 10px;
+
+    .icons {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        background: #212121;
+        font-size: 22px;
+        margin-bottom: 12px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        cursor: pointer;
+
+        a {
+            color: #fff;
+        }
+    }
+}
+
+.call_to_action {
+    position: fixed;
+    bottom: 80px;
+    right: 0;
+    z-index: 990;
+    padding: 15px 10px;
+
+    .icons {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        background: #212121;
+        font-size: 22px;
+        margin-bottom: 12px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        cursor: pointer;
+        // position: relative;
+
+        // &::before {
+        //     content: '';
+        //     left: -9px;
+        //     top: -10px;
+        //     width: 59px;
+        //     height: 59px;
+        //     position: absolute;
+        //     border: 10px solid rgba(0, 0, 0, 0.50);
+        //     animation: call-ring 1s ease  infinite;
+        // }
+
+        a {
+            color: #fff;
+        }
+    }
+}
+
+
+@keyframes call-ring {
+    0% {
+        left: 0px;
+        top: 0px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.50);
+    }
+
+    25% {
+        left: -2px;
+        top: -3px;
+        width: 45px;
+        height: 45px;
+        border: 3px solid rgba(0, 0, 0, 0.50);
+    }
+
+    50% {
+        left: -4px;
+        top: -5px;
+        width: 49px;
+        height: 49px;
+        border: 5px solid rgba(0, 0, 0, 0.50);
+    }
+
+    75% {
+        left: -6px;
+        top: -7px;
+        width: 53px;
+        height: 53px;
+        border: 7px solid rgba(0, 0, 0, 0.5);
+    }
+
+    100% {
+        left: -9px;
+        top: -10px;
+        width: 59px;
+        height: 59px;
+        border: 10px solid rgba(0, 0, 0, 0.50);
+    }
+}
+
+.bottom-action-bar {
+    position: fixed;
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    width: 85%;
+    justify-content: space-between;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.whatsapp {
+    background: #25D366;
+    color: #fff;
+}
+
+.call {
+    background: #ff5722;
+    color: #fff;
+}
+
+.action-btn i {
+    font-size: 18px;
+}
+
+.action-btn:hover {
+    opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+    .bottom-action-bar {
+        display: none !important;
+    }
+}
+
+
+@media (min-width:100px) and (max-width:575px) {
+    .main-page {
+        margin-top: 77px;
+    }
+
+    .social {
+        top: 85px !important;
+        right: 10px !important;
+    }
+
+    .scroll-top {
+        right: 10px !important;
+        bottom: 75px !important;
+    }
+
+    .call_to_action {
+        display: none;
+    }
+
+    .main__row_sm {
+        display: flex !important;
+    }
+
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .main-page {
+        margin-top: 77px;
+    }
+
+    .social {
+        top: 85px !important;
+        right: 10px !important;
+    }
+
+    .scroll-top {
+        right: 10px !important;
+    }
+
+    .call_to_action {
+        right: 10px !important;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .social {
+        top: 142px !important;
+        right: 10px !important;
+    }
+
+    .scroll-top {
+        right: 10px !important;
+    }
+
+    .call_to_action {
+        right: 10px !important;
+    }
+}

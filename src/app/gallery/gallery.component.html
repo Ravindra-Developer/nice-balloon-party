@@ -1,0 +1,17 @@
+<section class="block gallery">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-12 text-center thirteen">
+        <h1 class="heading text-dark  wow animate__fadeInUp" data-wow-duration="2s">Gallery</h1>
+      </div>
+ 
+      <!-- stars -->
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" *ngFor="let stars of data.galleryData[0].stars">
+        <div class="img__box  wow animate__fadeInUp" data-wow-duration="2s">
+          <img loading="lazy" [src]="stars?.imgPath" [alt]="stars?.altTxt" class="img-fluid">
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
