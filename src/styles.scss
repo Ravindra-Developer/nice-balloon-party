@@ -316,7 +316,7 @@ input[type=number] {
 .p-tabview .p-tabview-nav {
     border: none !important;
     // justify-content: center !important;
-    padding-left: 12px !important;
+    padding-left: 0 !important;
     box-shadow: none !important;
 }
 
@@ -345,4 +345,13 @@ input[type=number] {
     outline: 0 none;
     outline-offset: 0;
     box-shadow: none !important;
+}
+
+
+.p-tabview .p-tabview-nav-btn.p-link {
+    background: rgba(0, 0, 0, 0.2) !important;
+    color: #fff !important;
+    width: 3rem;
+    box-shadow:none !important;
+    border-radius: 0;
 }

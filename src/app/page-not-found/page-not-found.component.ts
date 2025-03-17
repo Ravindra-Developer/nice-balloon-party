@@ -7,7 +7,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./page-not-found.component.scss']
 })
 export class PageNotFoundComponent {
-  title = 'Page not found - waw ballons decoration';
+  title = 'Page not found - Nice Ballons';
   constructor(private titleService: Title){
     this.titleService.setTitle(this.title);
 

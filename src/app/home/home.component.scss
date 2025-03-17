@@ -107,7 +107,7 @@
         height: 82vh;
         position: relative;
         // background-color: #EAE6DF;
-        background-image: url('../../assets/banner/bg-banner-1.jpg');
+        background-image: url('../../assets/banner/bg-banner-2.jpg');
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
@@ -322,23 +322,23 @@
 
 .services {
     border-bottom: 1px solid #212121;
-    background-image: url('../../assets/banner/bg-banner-1.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    // background-image: url('../../assets/banner/bg-banner-2.jpg');
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
 
     .heading {
         margin-bottom: 40px;
-        color: #fff !important;
+        color: #212121 !important;
     }
 
     .head {
-        color: #fff;
+        color: #212121;
     }
 
     .txt {
-        color: #fff;
+        color: #212121;
     }
 
     .text-center {
