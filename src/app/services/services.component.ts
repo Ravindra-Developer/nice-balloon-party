@@ -33,31 +33,31 @@ export class ServicesComponent {
   // }
   returnImages(type: any): string {
     if (type == 'birthday') {
-      return 'assets/images/nice-balloons-images/niceballon_image__009.jpg'
+      return 'assets/services/birthday/WhatsApp Image 2025-03-17 at 17.48.44.jpeg'
     }
     else if (type == 'welcome-baby') {
-      return 'assets/images/nice-balloons-images/niceballon_image__003.jpg'
+      return 'assets/services/welcome_baby/WhatsApp Image 2025-03-17 at 17.52.17.jpeg'
     }
     else if (type == 'cartoon-theme') {
-      return 'assets/images/nice-balloons-images/niceballon_image__008.jpg'
+      return 'assets/services/cartoon_theme/WhatsApp Image 2025-03-17 at 17.54.17.jpeg'
     }
     else if (type == 'anniversary') {
-      return 'assets/images/nice-balloons-images/niceballon_image__002.jpg'
+      return 'assets/services/anniversary/WhatsApp Image 2025-03-17 at 17.56.00.jpeg'
     }
     else if (type == 'kids-birthday') {
-      return 'assets/images/nice-balloons-images/niceballon_image__009.jpg'
+      return 'assets/services/kids-birthday/WhatsApp Image 2025-03-17 at 17.58.04.jpeg'
     }
     else if (type == 'love-theme') {
-      return 'assets/images/nice-balloons-images/niceballon_image__0014.jpg'
+      return 'assets/services/love-theme/WhatsApp Image 2025-03-17 at 18.00.28.jpeg'
     }
     else if (type == 'baby-shower') {
-      return 'assets/images/nice-balloons-images/niceballon_image__006.jpg'
+      return 'assets/services/baby-shower/WhatsApp Image 2025-03-17 at 18.03.42.jpeg'
     }
     else if (type == 'office') {
-      return 'assets/images/nice-balloons-images/niceballon_image__0010.jpg'
+      return 'assets/services/office/WhatsApp Image 2025-03-17 at 18.08.02.jpeg'
     }
     else if (type == 'other-events') {
-      return 'assets/images/nice-balloons-images/niceballon_image__0011.jpg'
+      return 'assets/services/other-events/WhatsApp Image 2025-03-17 at 18.08.41.jpeg'
     }
     else {
       return 'assets/images/nice-balloons-images/niceballon_image__005.jpg'

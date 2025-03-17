@@ -5,14 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
   galleryData:any = [
-    {
-      title: 'Stars',
-      key: 'stars',
-      images: [
-        { imgPath: 'assets/images/nice-balloons-images/niceballon_image__001.jpg', altTxt: 'Star Decoration 1' },
-        { imgPath: 'assets/images/nice-balloons-images/niceballon_image__002.jpg', altTxt: 'Star Decoration 2' },
-      ],
-    },
+    
     {
       title: 'Birthday',
       key: 'birthday',
