@@ -31,3 +31,4 @@ const routes: Routes = [
 export class AppRoutingModule { }
 
 // ng generate module shared --route shared --module app.module.ts
+// npm run build 
