@@ -41,7 +41,7 @@ export class ContactUsComponent {
   }
 
   // submitContactUs() {
-  //   this.http.post('https://wawballoonsdecoration.in/mixServer/public/api/sendMail', this.contactusForm.value).subscribe((res: any) => {
+  //   this.http.post('https://niceballoonparty.com/mixServer/public/api/sendMail', this.contactusForm.value).subscribe((res: any) => {
   //     this.check = false;
   //     this.contactusForm.reset();
   //     this.messageService.clear()
